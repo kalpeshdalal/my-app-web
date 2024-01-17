@@ -18,7 +18,7 @@ export const Footer = (params) => {
           </li>
         </ul>
         <div className="text-center mt-2">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 mb-3">© 2023 <a href="/" className="hover:underline"><span className="text-[#48f7e8] ml-1">K </span><span className="text-gray-200">D™</span></a>
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 mb-3">© 2023 <a href="/" className="hover:underline"><span className="text-[#48f7e8] ml-1">K </span><span className="text-gray-200">D™</span></a>
           </span>
           <div className="text-gray-500 ">All Rights Reserved.</div>
         </div>

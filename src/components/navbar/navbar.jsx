@@ -32,11 +32,11 @@ export const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center w-full h-1 px-4 sm:px-8 text-white fixed ">
-            <div>
+            <Link to={'/'}>
                 <h1 className="text-4xl font-signature  bg-transparent  font-[900]">
                     <span className="text-4xl font-signature  bg-transparent text-[#48f7e8]"> K </span>D
                 </h1>
-            </div>
+            </Link>
 
             <ul className="hidden md:flex">
                 {links.map(({ id, link }) => (

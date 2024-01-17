@@ -19,14 +19,11 @@ export const authenticationReducer = createSlice({
     },
     logout: (state) => {
       state.userData = null;
-    },
-    updateName : (state,action)=>{
-      state.userData.name = action.payload;
     }
   },
 });
 
-export const { setUser, setSignUpModal, logout,updateName } =
+export const { setUser, setSignUpModal, logout } =
   authenticationReducer.actions;
 
 export default authenticationReducer.reducer;

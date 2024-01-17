@@ -5,14 +5,7 @@ import { useSelector } from 'react-redux';
 function AuthRequired({ children }) {
     let location = useLocation();
     const { userData } = useSelector((state) => state?.authenticationReducer ?? null);
-    // const [isAuth, setisAuth] = useState(false)
-    // useEffect(() => {
-    //     if (userData) {
-    //         setisAuth(true)
-    //     }
-    // }, [userData])
-
-
+   
     if (!userData) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     } else {

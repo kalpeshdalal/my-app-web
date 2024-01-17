@@ -8,7 +8,7 @@ export const MainLayout = () => {
             
                 <Navbar />
             
-            <div className="container-height w-full my-10">
+            <div className="text-black mt-10">
                 <Outlet />
             </div>
             <Footer />
