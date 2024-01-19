@@ -1,17 +1,16 @@
 import { Outlet } from "react-router-dom"
-import { Footer } from "../components/footer/footer"
 import { Navbar } from "../components/navbar/navbar"
+import { Sidebar } from "../components/sidebar/sidebar";
+import { useState } from "react";
 
 export const MainLayout = () => {
     return <>
-        <div className="flex min-h-screen flex-col items-center justify-between pt-10 px-4 sm:px-8">
-            
-                <Navbar />
-            
-            <div className="text-black mt-10">
+        <div className="flex min-h-screen flex-col   ">
+            <Navbar />
+            <Sidebar />
+            <div className="text-black ml-16 md:ml-64 mt-16 md:mt-20  ">
                 <Outlet />
             </div>
-            <Footer />
         </div>
     </>
 }

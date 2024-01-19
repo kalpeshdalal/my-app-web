@@ -6,6 +6,9 @@ import { Login } from "./pages/login/login";
 import { NotFound } from "./pages/notFound/notFound";
 import { Home } from "./pages/home/home";
 import AuthRequired from "./hooks/useAuthContext";
+import Category from "./pages/category/category";
+import Products from "./pages/products/products";
+import AddNewCategory from "./pages/category/addNewCategory";
 
 export const Routers = (params) => {
     return (
@@ -17,7 +20,12 @@ export const Routers = (params) => {
                         path="/"
                         element={<MainLayout/>}
                     >
+                        
                         <Route index element={<AuthRequired><Home/></AuthRequired>}/>
+                        <Route path="/category" element={<AuthRequired><Category/></AuthRequired>}/>
+                        <Route path="/category/new" element={<AuthRequired><AddNewCategory/></AuthRequired>}/>
+                        <Route path="/category/:id" element={<AuthRequired><AddNewCategory/></AuthRequired>}/>
+                        <Route path="/products" element={<AuthRequired><Products/></AuthRequired>}/>
                     </Route>
                     <Route
                         element={<AuthLayout />}

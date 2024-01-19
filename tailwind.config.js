@@ -42,11 +42,7 @@ export default {
       },
       primary: "rgba(222, 227, 47, 1)",
       secondary: "rgba(0, 232, 109, 0.20)",
-      lightBlue: '#3498db',
-      warmGray: '#8e8e8e',
-      trueGray: '#333333',
-      coolGray: '#6b7280',
-      blueGray: '#64748b',
+      
     },
     extend: {
       screens: {

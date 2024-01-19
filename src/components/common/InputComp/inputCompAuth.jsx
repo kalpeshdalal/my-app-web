@@ -7,7 +7,7 @@ const InputCompAuth = ({ label, value, onChange, error, type='text' }) => {
       setShowPassword(!showPassword);
     };
   return (
-    <div className="mb-4 relative">
+    <div className="mb-4 relative w-full">
       {label && (
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 absolute bg-white top-[-14px] left-2 px-1">
           {label}
