@@ -21,22 +21,27 @@ const Category = () => {
           accessor: 'name',
         },
         {
-          Header: 'Pack Size',
-          accessor: 'packSize',
+          Header: 'Description',
+          accessor: 'description',
         },
-        {
-          Header: 'Category',
-          accessor: 'category',
-        },
-        {
-          Header: 'MRP',
-          accessor: 'mrp',
-        },
-        {
-          Header: 'Image',
-          accessor: 'image',
-          Cell: ({ cell: { value } }) => <img src={value} alt="product" className="w-10 h-10" />,
-        },
+        // {
+        //   Header: 'Pack Size',
+        //   accessor: 'packSize',
+        // },
+        // {
+        //   Header: 'Category',
+        //   accessor: 'category',
+        // },
+        // {
+        //   Header: 'MRP',
+        //   accessor: 'mrp',
+        // },
+
+        // {
+        //   Header: 'Image',
+        //   accessor: 'image',
+        //   Cell: ({ cell: { value } }) => <img src={value} alt="product" className="w-10 h-10" />,
+        // },
         {
           Header: 'Status',
           accessor: 'status',

@@ -38,7 +38,7 @@ export default function TableComp({ columns, data }) {
                 return (
                   <td
                     {...cell.getCellProps()}
-                    className="px-6 py-4 whitespace-nowrap"
+                    className="px-6  py-4 whitespace-nowrap"
                   >
                     {cell.render('Cell')}
                   </td>
