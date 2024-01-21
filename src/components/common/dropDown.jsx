@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DropdownCompAuth = ({ label, options, value, onChange, error }) => {
+const DropdownCompAuth = ({ label, options, value, onChange, error, onFocus }) => {
   return (
     <div className="mb-4 relative w-full">
       {label && (
@@ -16,6 +16,7 @@ const DropdownCompAuth = ({ label, options, value, onChange, error }) => {
             error ? 'border-1 border-red-500' : 'border'
           }`}
           value={value}
+          onFocus={onFocus}
           onChange={onChange}
         >
           <option value="" disabled selected={!value}>
